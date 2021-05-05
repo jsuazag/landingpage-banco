@@ -16,6 +16,7 @@ header {
     margin: 30px 50px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 header nav {
     flex: 1;
@@ -70,4 +71,23 @@ header nav ul li a:hover {
 
 article {
     margin: 30px 60px;
+}
+
+/* tables, ipad */
+@media (max-width: 768px) {
+    body {
+        /*background-color: teal;*/
+        background-position-y: 200px;
+    }
+    header {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo img {
+        width: 150px;
+    }
+
+    .top-buttons {
+        display: none;
+    }
 }
