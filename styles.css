@@ -5,12 +5,17 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Lato';
+    background-image: url('img/celular.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: top right;
+    background-position-y: 130px;
 }
 
 header {
     margin: 30px 50px;
-    border: 1px solid #fff;
     display: flex;
+    align-items: center;
 }
 header nav {
     flex: 1;
@@ -35,4 +40,34 @@ header nav ul li a {
 }
 header nav ul li a:hover {
     opacity: 1;
+}
+
+.btn {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 2px 5px;
+}
+
+.btn-primary {
+    background-color: #ef6c00;
+}
+.btn-primary:hover {
+    opacity: 1;
+}
+
+.btn-link {
+    background-color: transparent;
+}
+.btn-link:hover {
+    opacity: 1;
+}
+
+article {
+    margin: 30px 60px;
 }
